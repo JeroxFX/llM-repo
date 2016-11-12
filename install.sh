@@ -15,3 +15,4 @@ sudo su
 mkdir /var/www/html/Monitor
 curl -s https://jeroxfx.github.io/llM-repo/installer.php.raw >> /var/www/html/Monitor/install.php
 echo "Now go to http://thispc/Monitor/install.php. WARNING this is going to take ages so don't panic"
+exit
