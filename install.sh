@@ -8,10 +8,9 @@ echo "                                         sss"
 
 
 curl -s https://jeroxfx.github.io/llM-repo/updatescript.sh >> llM-updater.sh
-chmod +x llM-updater.sh 
+chmod +x llM-updater.sh
+chmod 777 llM-updater.sh
 echo "The llM-update.sh is placed here. you can now add it to you rc.local file"
-
-sudo su
 mkdir /var/www/html/Monitor
 curl -s https://jeroxfx.github.io/llM-repo/installer.php.raw >> /var/www/html/Monitor/install.php
 echo "Now go to http://thispc/Monitor/install.php. WARNING this is going to take ages so don't panic"
