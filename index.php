@@ -45,7 +45,7 @@
                     <div class="card blue-grey hoverable darken-1" id="Memory_Card">
                         <div class="card-content white-text">
                             <span class="card-title">Memory</span>
-                                <p id="Memory_Status"><?php echo get_server_memory_usage() . "KB of " . get_server_installed_memory() . "KB"; ?></p>
+                                <p id="Memory_Status"><?php echo get_server_memory_usage() . "Bytes of " . get_server_installed_memory() . "Bytes"; ?></p>
                         </div>
                         <div class="card-action">
                             <a href="cpuraminfo.php">Details</a>
