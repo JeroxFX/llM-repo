@@ -52,8 +52,14 @@ if ($handle) {
 
         var options = {
           title: '<?php echo $c_title;?>',
-          hAxis: {title: '<?php echo $c_title;?>',  titleTextStyle: {color: '#333'}},
-          vAxis: {minValue: 0}
+            legend:'none',
+            series: { 0: { color:'#FFF'}},
+            backgroundColor:'#263238',
+          animation:{
+              startup: true,
+            duration: 3500,
+            easing: 'out',
+        } , vAxis: {minValue: 0, titleTextStyle:'#FFF'} ,hAxis: {title: '<?php echo $c_title;?>',  TextStyle: {color: '#FFF'}}
         };
 
         var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
