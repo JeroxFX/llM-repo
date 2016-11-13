@@ -8,7 +8,7 @@ function ref_CPU() {
 }
 
 function ref_Memory() {
-   var get_Mem = $.get('API/memory.php',function(result){ document.getElementById("Memory_Status").innerHTML = result + "KB" + " of " + document.getElementById("j_Server_Installed_Memory").innerHTML + "KB" });
+   var get_Mem = $.get('API/memory.php',function(result){ document.getElementById("Memory_Status").innerHTML = result + "Bytes" + " of " + document.getElementById("j_Server_Installed_Memory").innerHTML + "Bytes" });
 }
 
 function ref_Samba() {
